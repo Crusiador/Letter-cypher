@@ -15,7 +15,6 @@ public partial class MainWindow : Window
     private void btnToggleRun_Click(object sender, RoutedEventArgs e)
     {
 
-
         string inputText = tbInput.Text;
         char c1 = tbInput.Text[0];
         char c2 = tbInput.Text[1];
