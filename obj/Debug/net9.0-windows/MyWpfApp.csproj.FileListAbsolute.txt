@@ -18,3 +18,4 @@ C:\Users\rkaes\MyWpfApp\obj\Debug\net9.0-windows\refint\MyWpfApp.dll
 C:\Users\rkaes\MyWpfApp\obj\Debug\net9.0-windows\MyWpfApp.pdb
 C:\Users\rkaes\MyWpfApp\obj\Debug\net9.0-windows\MyWpfApp.genruntimeconfig.cache
 C:\Users\rkaes\MyWpfApp\obj\Debug\net9.0-windows\ref\MyWpfApp.dll
+C:\Users\rkaes\MyWpfApp\obj\Debug\net9.0-windows\MyWpfApp.sourcelink.json

@@ -17,7 +17,7 @@ public partial class MainWindow : Window
         running = !running; 
         if (running)
         {
-            tbStatus.Text = tbInput.Text;
+            tbStatus.Text = tbStatus.Text;
             btnToggleRun.Content = "Refresh";
         }
         else
@@ -38,7 +38,7 @@ public partial class MainWindow : Window
         char c6 = tbInput.Text[5];
         char c7 = tbInput.Text[6];
 
-        inputText = ToString(c1, c4, c3, c2, c5, c6, c7);
+        tbInput.Text = ToString(c1, c4, c3, c2, c5, c6, c7);
     }
 
     private string ToString(char c1, char c4, char c3, char c2, char c5, char c6, char c7)
