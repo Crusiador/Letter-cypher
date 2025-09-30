@@ -24,7 +24,7 @@ public partial class MainWindow : Window
         char c6 = tbInput.Text[5];
         char c7 = tbInput.Text[6];
         
-        string final = ToString(c1, c4, c3, c2, c5, c6, c7);
+        string final = ToString(c1, c2, c3, c4, c5, c6, c7);
         
         running = !running;
         if (running)
@@ -39,7 +39,7 @@ public partial class MainWindow : Window
         }
     }
 
-    private string ToString(char c1, char c4, char c3, char c2, char c5, char c6, char c7)
+    private string ToString(char c1, char c2, char c3, char c4, char c5, char c6, char c7)
     {
         return $"{c1}{c4}{c3}{c2}{c5}{c6}{c7}";
     }
