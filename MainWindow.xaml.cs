@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Windows;
 
 namespace MyWpfApp;
 
@@ -15,27 +16,38 @@ public partial class MainWindow : Window
     private void btnToggleRun_Click(object sender, RoutedEventArgs e)
     {
 
-        string inputText = tbInput.Text;
-        char c1 = tbInput.Text[0];
-        char c2 = tbInput.Text[1];
-        char c3 = tbInput.Text[2];
-        char c4 = tbInput.Text[3];
-        char c5 = tbInput.Text[4];
-        char c6 = tbInput.Text[5];
-        char c7 = tbInput.Text[6];
-        
-        string final = ToString(c1, c2, c3, c4, c5, c6, c7);
-        
-        running = !running;
-        if (running)
+        if (tbInput.Text.Length < 7)
         {
-            tbStatus.Text = final;
-            btnToggleRun.Content = "Refresh";
+            tbStatus.Text = "Input must be 7 characters long.";
+        }
+        else if (tbInput.Text.Length > 7)
+        {
+            tbStatus.Text = "Input must be 7 characters long.";
         }
         else
         {
-            tbStatus.Text = final;
-            btnToggleRun.Content = "Refresh";
+            string inputText = tbInput.Text;
+            char c1 = tbInput.Text[0];
+            char c2 = tbInput.Text[1];
+            char c3 = tbInput.Text[2];
+            char c4 = tbInput.Text[3];
+            char c5 = tbInput.Text[4];
+            char c6 = tbInput.Text[5];
+            char c7 = tbInput.Text[6];
+
+            string final = ToString(c1, c2, c3, c4, c5, c6, c7);
+
+            running = !running;
+            if (running)
+            {
+                tbStatus.Text = final;
+                btnToggleRun.Content = "Refresh";
+            }
+            else
+            {
+                tbStatus.Text = final;
+                btnToggleRun.Content = "Refresh";
+            }
         }
     }
 
